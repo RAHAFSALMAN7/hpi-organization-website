@@ -21,29 +21,29 @@ This is the official website for HPI Organization, built using **React**, **Type
 ```bash
 git clone https://github.com/RAHAFSALMAN7/hpi-organization-website.git
 cd hpi-organization-website
-2. Install Dependencies
-bash
-Copy
-Edit
+```
+
+### 2. Install Dependencies
+```bash
 npm install
-3. Run Locally
-bash
-Copy
-Edit
+```
+
+### 3. Run Locally
+```bash
 npm run dev
+```
 Open your browser at http://localhost:5173/ (or the port shown in terminal).
 
-4. Build for Production
-bash
-Copy
-Edit
+### 4. Build for Production
+```bash
 npm run build
+```
 The output will be in the dist folder.
 
-📂 Project Structure
-php
-Copy
-Edit
+---
+
+## 📂 Project Structure
+```php
 hpi-organization-website/
 ├── public/             # Static assets
 ├── src/                # React components and pages
@@ -55,3 +55,4 @@ hpi-organization-website/
 ├── package.json
 ├── vite.config.ts
 └── README.md
+```
