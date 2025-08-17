@@ -1,29 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
-    force: true,
-    esbuildOptions: {
-      logLevel: 'silent',
-    },
   },
-  base: '/', // ✅ fix for Netlify/Vercel
-  build: {
-    rollupOptions: {
-      onwarn(warning, warn) {
-        if (
-          warning.code === 'UNUSED_EXTERNAL_IMPORT' ||
-          warning.code === 'UNRESOLVED_IMPORT' ||
-          warning.code === 'MISSING_EXPORT' ||
-          warning.code === 'CIRCULAR_DEPENDENCY'
-        ) {
-          return
-        }
-        warn(warning)
-      },
-    },
-  },
-})
+  base: './', // ← هذا السطر مهم للنشر على Netlify
+});
