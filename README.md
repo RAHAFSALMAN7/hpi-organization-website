@@ -2,7 +2,7 @@
 
 This is the official website for HPI Organization, built using **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.
 
--------------
+---------------------
 
 ## 🛠 Technologies Used
 
